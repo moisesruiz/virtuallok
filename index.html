@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Virtual Lok Precintia</title>
+    <meta name="viewport" content="width=device-width, intial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link rel="stylesheet" href="styles/styles.css">
+  </head>
+
+  <body>
+      <header id="virtlok_client_header">
+        <div>
+        <!--Header logo and navigation-->
+          <nav>
+            <a title="Form QR page" id="virtlok_header_form" href="index.html">
+              <img title="Virtual lok" id="virtlok_nav_logo" alt="Virtual lok logo" src="pics/virtlok_logo_color_without_tech.png">
+            </a>
+            <ul id="virtlok_menu_list">
+                <li class="virtlok_layout">
+                    <a title="Form page" class="link current" href="index.html">Closing seal</a>
+                </li>
+            </ul>
+          </nav>
+        </div>
+      </header> 
+      <!--Main content-->
+      <div id="virtlok_container">
+        <main>
+          <section>
+            <div class="virtlok_company_info">
+              <img class="virtlok_company_logo" src="pics/demo/company1.png">
+              <div>Logistic company 1</div>
+            </div>
+           <form>
+            <div id="virtlok_form_content">
+              <ul class="virtlok_form_list">
+                  <li>
+                      <label  for="first">Your name</label>
+                      <input  class="form-control" required type="text" id="first" name="firstname">
+                  </li>
+                  <li style="display:none">
+                      <label for="email">Email</label>
+                      <input class="form-control" required type="text" id="email" name="mail">
+                  </li style="display:none">
+              </ul>  
+          </div>
+            <button class="virtlok_button_next">></button>
+            <button class="virtlok_button_close" type="sumbit">CLOSE</button>
+           </form>
+           
+          </section>
+        </main> 
+      </div>
+     <!--Footer info-->
+    <footer>
+      <div class="virtlok_footer_box">
+          <p>Copyright © 2023 Precintia. All rights reserved</p>
+          <p>Designed by <a title="mogerdevs" href="https://www.mogerdevs.com" target="_blank">mogerdevs</a></p>
+      </div>
+    </footer>
+    <script>
+       $('.form-control').focus(function(){
+        $(this).addClass('is-focused');
+        $(this).prev().addClass('hide-label');
+        });
+        $('.form-control').focusout(function(){
+            if($(this).val()==""){
+                $(this).removeClass('is-focused');
+                $(this).prev().removeClass('hide-label');
+          }
+        });
+    </script>
+    <!--<script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/custom.js"></script>-->
+  </body>
+</html>

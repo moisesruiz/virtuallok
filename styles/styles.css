@@ -1,0 +1,163 @@
+/*IMPORTS*/
+
+@import url('https://fonts.googleapis.com/css?family=Maven+Pro');
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@500&display=swap');
+
+
+body{
+  color: #474559;
+  font-family:'Maven Pro',serif;
+  margin:0;
+  justify-content:center;
+}
+
+a{
+  color:#6dbd92;
+  text-decoration: none;
+}
+
+a:focus{
+  text-decoration:underline;
+}
+
+ul{
+  padding-inline-start: unset;
+  justify-content: right;
+  width: 100%
+}
+
+button{
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  width: 90%;
+}
+
+input{
+  height: 32px;
+  margin:10px 0px 20px 0px;
+  font-size:14px;
+  width: 85%;
+}
+
+label{
+  font-size: 1.6em;
+  padding-bottom: 30px;
+}
+/*HEADER NAVBAR*/
+#virtlok_client_header{
+  position: sticky;
+  top: 0px; 
+  border-bottom: solid 1px #dadada;
+  z-index:999;
+}
+  #virtlok_client_header div{
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  nav{
+    height: 70px;
+    display: flex;
+    background-color:white;
+    font-weight: bold;
+  } 
+ 
+     
+    #virtlok_nav_logo{
+      height:50px;
+      padding-left:20px;
+      vertical-align:middle;
+    }
+
+    #virtlok_menu_list{
+      display:flex;
+      position: relative;
+    }
+      .virtlok_layout{
+        list-style-type: none;
+      }
+        .layout:hover, .layout:focus{
+          color:#6dbd92;
+        }
+       
+        .link{
+          padding:10px 30px 10px 30px;
+          text-decoration: none;
+          color:#5b5b5b;
+          font-size:14px;
+        }
+
+        .current{
+          color:#6dbd92;
+        }
+          .link:hover, .link:focus{
+            color:#6dbd92;
+          }
+/*BODY*/  
+
+#virtlok_container {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0em auto; 
+  padding:50px 20px 20px 20px;
+  text-align:center;
+  height: 100%;
+}
+
+.virtlok_company_info{
+  margin-bottom:30px;
+}
+  .virtlok_company_logo{
+    width: 40%;
+    height: 40%;
+  }
+
+  #virtlok_form_content ul{
+    list-style-type: none;
+    padding-left:0px;
+    margin-bottom:10px;
+  }
+  .is-focused{
+    border:1px solid #0019ff;
+    padding-left:10px;
+  }
+  .hide-label{
+    position:relative;
+    padding:0px;
+  }
+
+  .virtlok_button_close{
+    background-color:#6dbd92
+  }
+
+  .virtlok_button_next{
+    background-color: #474559;
+  }
+
+
+/*FOOTER*/
+footer{
+  font-size:16px;
+  color: #a0a0a0;
+  text-align: center;
+  border-top: solid 1px #dadada;
+  height: 120px;
+  padding-top:10px;
+}
+  .virtlok_footer_box{
+    margin: auto;
+    padding:1px;
+  }
+    .virtlok_footer_box a{
+      text-decoration: none;
+    }
+    .virtlok_footer_box a:hover,.footer_box a:focus{
+      text-decoration:underline;
+    }
